@@ -133,14 +133,12 @@ public class MyGraph implements Graph<Integer,Double>{
 
 	@Override
 	public Iterable<Vertex<Integer>> vertices() { // to be implemented by student in O(n) where n is number of vertices
-		System.out.println(">>>>>> vertices() needs to be implemented<<<<<<<<<<");
-		return (Iterable<Vertex<Integer>>) new ArrayList<Vertex<Integer>>(); // now it returns a dummy value to be corrected
+		return (Iterable<Vertex<Integer>>) vertices; // now it returns a dummy value to be corrected
 	}
 
 	@Override
 	public Iterable<Edge<Double>> edges() { // to be implemented by student in O(m) where m is number of edges
-		System.out.println(">>>>>> edges() needs to be implemented<<<<<<<<<<");
-		return (Iterable<Edge<Double>>) new LinkedList<Edge<Double>>(); // now is returns a dummy value to be corrected
+		return (Iterable<Edge<Double>>)edges; // now is returns a dummy value to be corrected
 	}
 
 	@Override
