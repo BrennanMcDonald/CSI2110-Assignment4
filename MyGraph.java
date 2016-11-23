@@ -133,7 +133,7 @@ public class MyGraph implements Graph<Integer,Double>{
 
 	@Override
 	public Iterable<Vertex<Integer>> vertices() { // to be implemented by student in O(n) where n is number of vertices
-		return (Iterable<Vertex<Integer>>) vertices; // now it returns a dummy value to be corrected
+		return vertices; // now it returns a dummy value to be corrected
 	}
 
 	@Override
