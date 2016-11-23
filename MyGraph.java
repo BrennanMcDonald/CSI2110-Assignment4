@@ -133,12 +133,20 @@ public class MyGraph implements Graph<Integer,Double>{
 
 	@Override
 	public Iterable<Vertex<Integer>> vertices() { // to be implemented by student in O(n) where n is number of vertices
-		return vertices; // now it returns a dummy value to be corrected
+		ArrayList<Vertex<Integer>> castedVertices = new ArrayList<Vertex<Integer>>();
+		for(MyVertex v : vertices){
+			castedVertices.add((Vertex<Integer>)v);		
+		}
+		return castedVertices;
 	}
 
 	@Override
 	public Iterable<Edge<Double>> edges() { // to be implemented by student in O(m) where m is number of edges
-		return (Iterable<Edge<Double>>)edges; // now is returns a dummy value to be corrected
+		ArrayList<Edge<Double>> castedEdges = new ArrayList<Edge<Double>>();
+		for(MyEdge e : edges){
+			castedEdges.add((Edge<Double>)e);		
+		}
+		return castedEdges; // now is returns a dummy value to be corrected
 	}
 
 	@Override
