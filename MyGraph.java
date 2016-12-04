@@ -51,7 +51,7 @@ public class MyGraph implements Graph<Integer,Double>{
 
 	}
 
-	 /**
+     /**
      *  MyEdge: nested class implementing the Edge interface
      *
      */
@@ -156,22 +156,17 @@ public class MyGraph implements Graph<Integer,Double>{
 
 	@Override
 	public Iterable<Edge<Double>> incidentEdges(Vertex<Integer> v) { // to be implemented by student in O(n), n number of vertices
-		System.out.println(">>>>>> incidentEdges(v) needs to be implemented<<<<<<<<<<");
-		return null; // return dummy value to be corrected
+		
 	}
 
 	@Override
 	public Edge<Double> getEdge(Vertex<Integer> u, Vertex<Integer> v)
-			throws IllegalArgumentException { // to be implemented by student in O(1)
-		System.out.println(">>>>>> getEdge(u,v) needs to be implemented<<<<<<<<<<");
-		return null; // return dummy value to be corrected
+		return new MyEdge(0,u,v); 
 	}
 
 	@Override
 	public Vertex<Integer>[] endVertices(Edge<Double> e)
-			throws IllegalArgumentException { // to be implemented by student in O(1)
-		System.out.println(">>>>>> endVertices(e) needs to be implemented<<<<<<<<<<");
-		return null; // return dummy value to be corrected
+		return new  		
 	}
 
 	@Override
