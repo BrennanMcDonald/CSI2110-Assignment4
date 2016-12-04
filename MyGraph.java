@@ -128,7 +128,7 @@ public class MyGraph implements Graph<Integer,Double>{
 
 	@Override
 	public int numEdges() { // to be implemented by student in O(1)
-				return edges.size();
+		return edges.size();
 	}
 
 	@Override
@@ -151,8 +151,7 @@ public class MyGraph implements Graph<Integer,Double>{
 
 	@Override
 	public int degree(Vertex<Integer> v) throws IllegalArgumentException { // to be implemented by student in O(1)
-		System.out.println(">>>>>> degree(v) needs to be implemented<<<<<<<<<<");
-		return 0; // return dummy value to be corrected
+		return v.getDegree();
 	}
 
 	@Override
